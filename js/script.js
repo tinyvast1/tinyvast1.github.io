@@ -1,3 +1,6 @@
+window.addEventListener("popstate", function() {
+        console.log("URL changed");
+});
 const hamburger = document.querySelector(".hamburger"),
   menu = document.querySelector(".menu"),
   closeElem = document.querySelector(".menu__close"),
