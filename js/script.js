@@ -1,8 +1,3 @@
-window.addEventListener("popstate", function() {
-        const title = document.createElement('div');
-        title.textContent = document.location.href;
-        document.body.prepend(title);
-});
 const hamburger = document.querySelector(".hamburger"),
   menu = document.querySelector(".menu"),
   closeElem = document.querySelector(".menu__close"),
