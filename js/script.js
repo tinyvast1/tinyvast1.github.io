@@ -1,5 +1,7 @@
 window.addEventListener("popstate", function() {
-        console.log("URL changed");
+        const title = document.createElement('div');
+        title.textContent = document.location.href;
+        document.body.prepend(title);
 });
 const hamburger = document.querySelector(".hamburger"),
   menu = document.querySelector(".menu"),
