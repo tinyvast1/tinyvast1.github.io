@@ -1,0 +1,47 @@
+.aboutme
+    min-height: 500px
+    padding: 80px 0 80px 0
+    &__title
+        text-align: center
+    &__wrapper
+        margin-top: 50px
+        display: grid
+        grid-template-columns: repeat(3,4fr)
+    &__descr
+        padding-right: 40px
+        font-size: 24px
+        font-weight: 300
+        font-weight: 400
+        span
+            display: block
+            font-size: 34px
+            margin-bottom: 30px
+            font-weight: 500
+    &__img
+        display: flex
+        justify-content: space-between
+        align-items: center
+        img
+            width: 75%
+            border-radius: 100%
+            margin: 0 50%
+            transform: translateX(-50%)
+            box-shadow: 0px 0px 25px rgba(188, 176, 176, 1)
+            padding: 0.7em
+    &__details
+        justify-self: center
+        font-size: 24px
+        font-weight: 400
+        &-medium
+            display: block
+            font-size: 34px
+            margin-bottom: 30px
+            font-weight: 500
+        &-bold
+            margin: 12px 0
+            font-weight: 700
+            font-size: 26px
+            display: block
+            font-weight: 700
+    hr
+        +stick

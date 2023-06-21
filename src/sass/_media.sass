@@ -1,0 +1,237 @@
+@media ( max-width: 1400px )
+    .container
+        width: 1140px
+@media ( max-width: 1200px )
+    .container
+        width: 960px
+@media ( max-width: 960px )
+    .container
+        width: 720px
+    .skills
+        &__wrapper
+            grid-template-columns: repeat(2,1fr)
+        &__ratings
+            grid-template-columns: repeat(2,4fr)
+        &__rating
+            &-title
+                font-size: 25px
+            &-percent
+                font-size: 25px
+    .resume
+        &__wrapper
+            grid-template-columns: 1fr
+            margin: 0
+        &__elem
+            display: flex
+            align-items: center
+        &__circle
+            left: 0
+            transform: translateX(0)
+            margin-right: 30px
+            width: 100px
+            height: 90px
+
+    .aboutme
+        &__wrapper
+            grid-template-columns: repeat(2, 1fr)
+            row-gap: 50px
+        &__descr
+            grid-column: 1 / 3
+@media ( max-width: 768px )
+    .container
+        width: 540px
+    .btn
+        font-size: 26px
+        padding: 6px
+    .title
+        font-size: 33px
+    .aboutme
+        hr
+            width: 130px
+
+    .skills
+        &__descr
+            font-size: 18px
+            span
+                font-size: 18px
+        &__wrapper
+            grid-template-columns: repeat(2,1fr)
+        &__rating
+            &-title
+                font-size: 22px
+            &-percent
+                font-size: 22px
+        
+    .resume
+        &__circle
+            left: 0
+            transform: translateX(0)
+            margin-right: 30px
+            width: 85px
+            height: 75px
+        &__title
+            font-size: 24px
+        &__subtitle
+            font-size: 18px
+            span
+                font-size: 20px
+        &__descr
+            font-size: 17px
+    
+    .hamburger
+        position: absolute
+        right: 0
+        &__elem
+            height: 2px
+            width: 30px
+            margin-bottom: 7px 
+    .promo
+        &__logo
+            left: 0
+            transform: translateX(0)
+            height: 50px
+        &__title
+            margin-top: 15px
+        &__subtitle
+            padding-left: 15px
+            &::before
+                left: 5px
+                top: -8px
+                width: 40px
+                height: 40px
+        &__social
+            display: none
+    .contacts
+        &__subtitle
+             font-size: 36px
+        &__text
+            font-size: 23px
+        &__form
+            width: 100%
+        &__input
+            input
+                font-size: 20px
+        &__textarea
+            textarea
+                font-size: 20px
+        &__btn
+            margin: 0 auto
+            grid-row: 4
+            grid-column: 1 / 3
+            width: 100%
+        &__triggers
+            grid-row: 3 / 4
+            grid-column: 1 / 3
+            input
+                left: 0
+            span 
+                padding-left: 33px
+                font-size: 21px
+    .menu
+        &__elem
+            font-size: 20px
+
+    .title
+        &-fz78
+            font-size: 50px
+            line-height: 50px
+        &-fz27
+            font-size: 24px
+            line-height: 24px
+    .aboutme
+        &__descr
+            font-size: 21px
+            span
+                font-size: 30px
+        &__details
+            font-size: 21px
+            &-medium
+                font-size: 30px
+            &-bold
+                font-size: 23px
+
+
+@media ( max-width: 576px )
+    .container
+        width: 90%
+    .resume
+        &__circle
+            width: 75px
+            height: 65px
+    .promo
+        &__title
+            font-size: 45px
+        &__subtitle
+            font-size: 27px
+    .btn
+        font-size: 22px
+    .aboutme
+        &__img
+            grid-column: 1 / 3
+        &__details
+            grid-column: 1 / 3
+            justify-self: left
+            &-bold
+                display: inline
+    .skills
+        &__wrapper
+            grid-template-columns: repeat(1,1fr)
+        &__ratings
+            grid-template-columns: repeat(1, 1fr)
+    .contacts
+        &__subtitle
+            font-size: 32px
+        &__text
+            span
+                font-size: 21px
+        &__social
+            margin: 10px auto
+        &__form
+            gap: 20px 20px
+        &__policy
+            span
+                font-size: 17px
+
+@media ( max-width: 375px )
+    .menu
+        width: 100%
+        &__list
+            width: 80%
+    .title
+        font-size: 30px
+    .promo
+        &__subtitle
+            font-size: 22px
+        &__title
+            font-size: 40px
+    .resume
+        &__elem
+            margin-top: 30px
+            display: block
+        &__circle
+            
+            height: 75px
+            margin: 0 auto
+    
+    .aboutme
+        &__descr
+            font-size: 16px
+            span
+                font-size: 26px
+        &__details
+            font-size: 20px
+            &-medium
+                font-size: 26px
+            &-bold
+                font-size: 20px 
+    .contacts
+        &__text
+            span
+                font-size: 19px
+@media ( max-height: 375px )
+    .promo
+        &__title
+            margin-top: 5px
+        &__btns
+            margin-top: 15px
+    

@@ -1,0 +1,75 @@
+.skills
+    min-height: 1000px
+    padding: 0 0 80px 0 
+    hr
+        +stick
+    &__wrapper
+        margin-top: 80px
+        display: grid
+        grid-template-columns:  repeat(3, 3fr)
+        column-gap: 50px
+        row-gap: 50px
+    &__descr
+        padding: 30px 0 0 0
+        width: 90%
+        font-weight: 500
+        font-size: 20px
+        margin: 0 auto
+        span
+            display: block
+            font-weight: 700
+            font-size: 22px
+            margin-bottom: 10px
+        hr
+            width: 100%
+            height: 1px
+            background-color: #000
+            margin-bottom: 10px
+    &__elem
+        padding: 20px
+        display: grid
+        border-radius: 20px
+        background-color: rgba(188, 176, 176, .4)
+        position: relative
+    &__img
+        position: absolute
+        width: 100%
+        height: 100px
+        display: flex
+        justify-content: center
+        align-items: center
+        top: -50px
+    &__ratings
+        margin-top: 80px
+        display: grid
+        grid-template-columns: repeat(3, 4fr)
+        column-gap: 30px
+        row-gap: 30px
+    &__rating
+        display: grid
+        grid-template-columns: repeat(2, )
+        justify-content: space-between
+        row-gap: 20px
+        &-title
+            font-weight: 700
+            font-size: 24px
+        &-percent
+            font-weight: 500
+            font-size: 24px
+        &-scale
+            grid-column: 1 / 3
+            border: 2px solid #000
+            width: 100%
+            height: 20px
+            border-radius: 5px
+            position: relative
+            span
+                content: ''
+                position: absolute
+                height: calc( 100% + 3px )
+                border-radius: 5px
+                background-color: $maincolor
+                top: -2px
+                left: 0
+                z-index: -1
+    

@@ -1,0 +1,56 @@
+.promo
+    background: url('../img/promo_bg.webp') top right/cover no-repeat
+    // background-color: rgba(0, 0, 0, .6)
+    min-height: 100vh
+    position: relative
+    box-shadow: inset
+    z-index: 1
+    &__wrapper
+        min-height: 100px
+        // position: absolute
+        margin-top: 55vh
+        transform: translateY(-100%)
+
+    &__btn
+        margin-left: 30px
+        background-color: rgba(0, 0, 0, 0)
+        font-size: 27px
+        margin-top: 45px
+        cursor: pointer
+            
+    &__title
+        margin-top: 30px
+        color: #fff
+        font-weight: 700
+    &__subtitle
+        position: relative
+        padding-left: 25px
+        color: #fff
+        font-weight: 500
+        &::before
+            left: 0
+            top: -12px
+            content: ''
+            position: absolute
+            width: 50px
+            height: 50px
+            background-color: $maincolor
+            border-radius: 100%
+            z-index: -1
+    &__nav
+        position: relative
+        display: flex
+        align-items: center
+        justify-content: space-between
+        padding: 20px
+        height: 50px
+    &__logo
+        position: absolute
+        left: 50%
+        transform: translateX(-50%)
+        height: 80px
+        img
+            height: 100%
+    &__btns
+        margin-top: 40px
+
